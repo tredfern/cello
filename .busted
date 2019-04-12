@@ -1,0 +1,10 @@
+return {
+  _all = {
+    ROOT = {"./"},
+    lpath = "./?/init.lua;"
+  },
+  travis = {
+    verbose = true,
+    coverage = true
+  }
+}
