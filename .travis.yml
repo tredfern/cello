@@ -16,7 +16,7 @@ install:
 - luarocks install luacov
 - luarocks install luacov-coveralls
 script:
-- luacheck main.lua ./moonpie
+- luacheck .
 - busted --run=travis
 after_success:
 - echo $TRAVIS_BUILD_DIR/lua_install
