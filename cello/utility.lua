@@ -3,10 +3,11 @@
 -- This software is released under the MIT License.
 -- https://opensource.org/licenses/MIT
 
-local Dice = {}
+local utility = {}
 
-function Dice.d6()
-  return math.random(1, 6)
+function utility.choose(t)
+  local i = math.random(1, #t)
+  return t[i]
 end
 
-return Dice
+return utility

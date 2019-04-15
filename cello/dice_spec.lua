@@ -4,6 +4,13 @@
 -- https://opensource.org/licenses/MIT
 
 describe("Dice", function()
-  it("passes a test", function()
+  local Dice = require "cello.dice"
+
+  describe("basic dice types", function()
+    it("d6", function()
+      local r = Dice.d6()
+      assert.is_true(r >= 1 and r <= 6)
+      assert.is_nil(string.find(tostring(r), "%."))
+    end)
   end)
 end)
