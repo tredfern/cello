@@ -11,4 +11,14 @@ describe("Character", function()
     assert.not_nil(c)
   end)
 
+  it("can make a pretty print version of the table", function()
+    local c = Character:new({
+      name = "Foo Bar"
+    })
+    assert.equals([[
+-Character-
+Name: Foo Bar
+]], tostring(c))
+  end)
+
 end)
