@@ -4,11 +4,19 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "Run Love",
+            "type": "shell",
+            "command": "/mnt/c/Program Files/LOVE/love.exe",
+            "args": [
+                "."
+            ],
+            "problemMatcher": []
+        },
+        {
             "label": "Tests",
             "type": "shell",
             "command": "busted",
             "args": [
-                ".",
                 "--verbose"
             ],
             "group": {
